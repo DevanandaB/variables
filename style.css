@@ -5,13 +5,24 @@
 }
 body {
     background-color: rgb(160, 231, 28);
+    overflow: hidden;
+}
+.ctrls {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  padding-bottom: 30px;
+  text-align: center;
 }
 img {
-    width: 100%;
+    width: 80%;
     height: 400px;
     padding: var(--spacing);
     background: var(--color);
     filter: blur(var(--blur));
+    display: block;     /* centering div; */
+    margin: auto;   /* centering div; */
 }
 .hl {
   color: var(--color);
