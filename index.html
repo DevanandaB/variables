@@ -7,26 +7,21 @@
     <title>Variables</title>
 </head>
 <body>
-    <h1 style="text-align: center; color: white; font-size: 40px;">Update CSS Variables with <span>JS</span></h1>
+    <h1 style="text-align: center; color: white; font-size: 40px;">Update CSS Variables with <span class="hl">JS</span></h1>
 
-    <div class="slideContainer">
-        <p>Slider: </p>
-        <input type="range" min="1" max="190" value="50" class="slider" id="myRange">
+    <div class="ctrls-container">
+        <label for="spacing">Spacing: </label>  
+        <input type="range" id="spacing" name="spacing" min="10" max="200" value="10">
+
+        <label for="blur">Blur: </label>
+        <input type="range" name="blur" id="blur" min="0" max="25" value="10">
+
+        <label for="color">Color: </label>
+        <input type="color" id="color" name="color" value="#074925"> 
+        <!-- in input of color, value can only accept hex code!  -->
     </div>
-
-    <div class="blurContainer">
-        <p>Blur: </p>
-        <input type="range" min="1" max="190" value="50" class="slider" id="myRange">
-    </div>
-
-    <div class="base-color">
-        <p>Base-color: </p>
-    </div>
-
-    <div class="img-container">
-        <img src="https://res.cloudinary.com/simpleview/image/upload/v1709821253/clients/bristol/Street_Art_Upfest_Six_Sisters_Credit_Hannah_Judah_456a3325-8730-47cc-b89f-87e81953e47d.jpg">
-    </div>
-
+        
+    <img src="https://res.cloudinary.com/simpleview/image/upload/v1709821253/clients/bristol/Street_Art_Upfest_Six_Sisters_Credit_Hannah_Judah_456a3325-8730-47cc-b89f-87e81953e47d.jpg">
 
     <script src="index.js"></script>
 </body>
